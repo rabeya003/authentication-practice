@@ -1,11 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+
 import "./index.css";
 import Social from "./Components/Social";
 import Login from "./Components/Login";
 import Registration from "./Components/Registration";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./Components/Layout/Main";
+import { Toaster } from "react-hot-toast";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,5 +32,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Toaster />
   </React.StrictMode>
 );
