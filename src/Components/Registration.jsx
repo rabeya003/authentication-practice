@@ -11,7 +11,6 @@ const Registration = () => {
   const auth = getAuth(app);
   const handleForm = (e) => {
     e.preventDefault();
-    const img = e.target.img.value;
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
