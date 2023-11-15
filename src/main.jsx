@@ -4,10 +4,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import Social from "./Components/Social";
 import Login from "./Components/Login";
-import Registration from "./Components/Registration";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./Components/Layout/Main";
 import { Toaster } from "react-hot-toast";
+import Registration from "./Components/Registration";
 const router = createBrowserRouter([
   {
     path: "/",
